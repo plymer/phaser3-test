@@ -21,6 +21,7 @@ export const GameEngine = forwardRef<IRefGameEngine, IProps>(function GameEngine
     height: window.innerHeight,
     backgroundColor: "#028af8",
     parent: "game-container",
+    physics: { arcade: { gravity: { x: 0, y: 300 }, debug: true }, default: "arcade" },
     scene: [MainGame],
   };
 
