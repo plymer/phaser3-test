@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "allowJs": false,
+    "incremental": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "./dist"
+  },
+  "include": ["src"]
+}
