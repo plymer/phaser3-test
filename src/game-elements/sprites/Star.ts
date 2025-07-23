@@ -19,12 +19,12 @@ export class Star extends Phaser.Physics.Arcade.Sprite {
     if (this.body) {
       const body = this.body as Phaser.Physics.Arcade.Body;
       body.setBounce(1, 1); // Bounce on both X and Y axis
-
+      body.setFriction(0.5);
       body.setCircle(this.width / 2);
 
       // Add some air resistance to prevent floating
       body.setDragX(20); // Horizontal air resistance
-      body.setGravityY(900); // Additional gravity for faster falling
+      body.setGravityY(1800); // Additional gravity for faster falling
       // body.setCollideWorldBounds(true); // Bounce off world boundaries
     }
 
@@ -43,7 +43,7 @@ export class Star extends Phaser.Physics.Arcade.Sprite {
     if (this.body) {
       const body = this.body as Phaser.Physics.Arcade.Body;
       // Rotate based on horizontal velocity
-      this.rotation += body.velocity.x * 0.001;
+      this.rotation += body.velocity.x * 0.0001;
     }
 
     const windowHeight = parseFloat(this.scene.game.config.height.toString());

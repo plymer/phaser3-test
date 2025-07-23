@@ -1,5 +1,6 @@
 import { useEngineContext } from "@/engine/EngineContext";
 import { Star } from "@/game-elements/sprites/Star";
+import { useState } from "react";
 
 const UiLayer = () => {
   const { engineRef } = useEngineContext();
